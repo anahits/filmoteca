@@ -71,10 +71,10 @@
 				<div class="caption pull-right">
 					<h5></h5>
 					<span></span>
-					<a href="">Consulta<span class="icon icon-download pull-right"></span></a>
+					<a href="http://issuu.com/filmotecaunam/docs/carteleradigitalfeb2015">Consulta<span class="icon icon-download pull-right"></span></a>
 				</div>	
 				<div class="caption pull-right">
-					<a href="http://issuu.com/filmotecaunam/docs/carteleradigitalfeb2015" target="_blank">Descarga<span class="icon icon-download pull-right"></span></a>
+					<a href="" target="_blank">Descarga<span class="icon icon-download pull-right"></span></a>
 				</div>
 			</div>
 		</div>
