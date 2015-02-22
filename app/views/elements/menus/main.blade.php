@@ -124,7 +124,7 @@
                   EXTENSIÓN ACADÉMICA<b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/pages/extension-academica/cursos-y-talleres">Cursos y talleres</a></li>
+                  <li><a href="/pages/cursos/cursos-y-talleres">Cursos y talleres</a></li>
                   
                   <li><a href="/pages/extension-academica/servicio-social">Servicio social</a></li>
                   
