@@ -18,10 +18,21 @@
 .exhibition-datepicker-week-row:hover button,
 .exhibition-datepicker-week-row button.active
 {
-	background-color: #39b3d7;
+	background-color: #810069;
 }
 
 .exhibition-datepicker-week-row:hover button:hover
 {
-	background-color: #39b3d7;
+	background-color: #f4f5f5;
 }
+
+
+.btn-info {
+    background-color: #810069;
+    border-color: #5f0247;
+    color: #fff;
+    }
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+    background-color: #810069;
+    border-color: #5f0247;
+    color: #fff;}
