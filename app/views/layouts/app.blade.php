@@ -28,11 +28,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				
-				<div class="sidebar col-sm-4">
+				<div class="sidebar col-sm-3">
 					@yield('sidebar')
 				</div>
 
-				<div class="content col-sm-8">
+				<div class="content col-sm-9">
 					@yield('content')
 				</div>
 				
