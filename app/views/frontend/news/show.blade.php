@@ -3,7 +3,7 @@
 @section('breadcrumbs')
 <li>
 	<a href="">
-		Prensa
+		Difusión
 	</a>
 </li>
 <li class="active">
@@ -23,17 +23,17 @@
 
         <div class="row">
             <div class="col-sm-12 cover">
-                <h1 class="text-center">{{ $news->title }}</h1>
+                <h2 class="text-center">{{ $news->title }}</h2>
             </div>
         </div>
 
         <div class="row">
+            <img src="{{ asset( $news->image->url('original')) }}" class="img-responsive">
+            
             <div class="col-ms-12">
                 {{ $news->body }}
-            </div>
-
-             <img src="{{ asset( $news->image->url('original')) }}" class="img-responsive">
-         </div>
+            </div>    
+        </div>
 
         <div class="row more-news">
             <div class="col-sm-12">
