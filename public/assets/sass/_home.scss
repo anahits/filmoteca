@@ -83,6 +83,14 @@ $section-color: #E5E5E5;
 
 .flm-section.programming{
 	
+	.content {
+		margin-bottom: 0px;
+	}
+
+	.container-fluid .content {
+		margin-bottom: 0px;
+	}
+
 	.carrousel{
 		width: 100%;
 		
@@ -92,7 +100,7 @@ $section-color: #E5E5E5;
 
 		h3{
 			color: #F9D932;
-			margin-top: 10px // Overrides bootstrap's rule.
+			margin-top: 5px // Overrides bootstrap's rule.
 		}
 
 		h4{
@@ -102,9 +110,17 @@ $section-color: #E5E5E5;
 		img{
 			width: 100%;
 		}
+
+		.slick-slider {
+    		margin-bottom: 10px;
+    	}
 	}
 
 	.queries{
+
+		h5{
+			margin-bottom: 2px;
+		}
 
 		.btn-group{
 			display: block
@@ -130,6 +146,15 @@ $section-color: #E5E5E5;
 			margin-bottom: 5px;
 			background-color: $primary-color;
 		}
+
+		.dropdown-menu {
+		 background-color: $primary-color;
+
+		 a:hover{
+			color: #2d2d2d;
+			}
+		}
+
 	}
 
 	.digital-billboard{
@@ -139,11 +164,12 @@ $section-color: #E5E5E5;
 		}
 		img{
 			width: 300px;
+			height: 58px;
 		}
 
 		.caption{
 			width: 33%;
-
+			margin-top: -9px;
 			padding-right: 10px;
 		}
 
