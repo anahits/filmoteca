@@ -92,9 +92,9 @@
                 <ul class="dropdown-menu">
                   <li><a href="{{ URL::to('exhibition') }}">Programación del mes</a></li>
                   
-                  <li><a href="/pages/cartelera-digital">Cartelera digital</a></li>
+                  <li><a href="/pages/programacion/cartelera-digital">Cartelera digital</a></li>
                   
-                  <li><a href="/pages/invitaciones/invitaciones">Invitaciones</a></li>
+                  <li><a href="/pages/programacion/invitaciones">Invitaciones</a></li>
                   
                   <li ><a href="{{ URL::to('exhibition/history')}}">Histórico</a></li>
                 </ul>

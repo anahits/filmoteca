@@ -3,9 +3,9 @@ $menu = array(
 
 	array('Programación', '/exhibition'),
 
-	array('Cartelera', '/'),
+	array('Cartelera', '/pages/programacion/cartelera-digital'),
 
-	array('Invitaciones', '/pages/invitaciones/invitaciones'),
+	array('Invitaciones', '/pages/programacion/invitaciones'),
 
 	array('Histórico', '/exhibition/history')
 
