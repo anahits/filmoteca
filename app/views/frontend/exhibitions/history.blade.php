@@ -1,3 +1,4 @@
+
 @extends('layouts.default')
 
 @section('breadcrumbs')
@@ -6,6 +7,11 @@
 	</li>
 	<li class="active">Histórico de programación</li>
 @stop
+
+@section('sidebar')
+	@include('elements.menus.programacion', array('selected' => 3))
+@stop
+
 
 @section('content')
 
