@@ -13,10 +13,6 @@
 @stop
 
 
-
-
-
-
 @section('breadcrumbs')
 <li>
 	<a href="/pages/extencion-academica/index">
@@ -40,7 +36,11 @@
 
 	<h1>Servicio Social</h1>
 
-	<p>En su afán de contribuir al enriquecimiento del mundo cinematográfico y al mismo tiempo ayudar a los miembros de la población estudiantil a poner en práctica los conocimientos obtenidos durante la carrera, la Filmoteca de la UNAM pone a disposición de la comunidad estudiantil el  programa de servicio social, abierto a distintas áreas del conocimiento como son: </p>
+	<p>En su afán de contribuir al enriquecimiento del mundo cinematográfico y al mismo tiempo ayudar a los miembros de la población estudiantil a poner en práctica los conocimientos obtenidos durante la carrera, la Filmoteca de la UNAM pone a disposición de la comunidad estudiantil el  programa de servicio social, abierto a distintas áreas del conocimiento.</p>
+	<p>Si deseas ser parte del programa de Servicio Social de la Filmoteca de la UNAM debes contar con un 70% de créditos cubiertos, historial académico que ratifique la información e identificación oficial.</p>
+	<p>Comunicarte con la maestra Nadina Illescas Villegas al teléfono 5622-9589 y 5622-9595, o al correo electrónico <a href="mailto:nadina1020@gmail.com">nadina1020@gmail.com</a> para pedir una cita o ampliar la información.</p>
+	<br>
+	<p>Estas son las diferentes áreas en las que puedes participar:</p>
 
 <ul>
 	<div class="informacion">
@@ -232,7 +232,6 @@
 		</div>	
 	</div>
 </ul>
-	<br>
-	<p>Si deseas ser parte del programa de Servicio Social de la Filmoteca de la UNAM debes contar con un 70% de créditos cubiertos, historial académico que ratifique la información e identificación oficial. Comunicarte con la maestra Nadina Illescas Villegas al teléfono 5622-9589 y 5622-9595, o al correo electrónico <a href="mailto:nadina1020@gmail.com">nadina1020@gmail.com</a> para pedir una cita o ampliar la información.</p>
+
 </div>
 @stop

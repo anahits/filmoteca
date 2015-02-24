@@ -85,11 +85,12 @@
   </div><!-- #camera_wrap_1 -->
 
 </div><!-- .fluid_container -->  
-<h5>Visita la Filmoteca de la UNAM</h5>
-<p>Para acercar a la comunidad estudiantil a conocer el trabajo que desempeña la Filmoteca de la UNAM se ofrecen visitas guiadas a las sus diversas áreas, por ejemplo el área de restauración, donde los alumnos podrán observar los procesos a los que son sometidos los materiales fílmicos para su restauración y mantenimiento.</p>
+
+<h3>Visita la Filmoteca de la UNAM</h3>
+<p>Para acercar a la comunidad estudiantil a conocer el trabajo que desempeña la Filmoteca de la UNAM se ofrecen visitas guiadas a sus diversas áreas, por ejemplo el área de restauración, donde los alumnos podrán observar los procesos a los que son sometidos los materiales fílmicos para su restauración y mantenimiento.</p>
 <p>Tambien tendrán la oportunidad de conocer:</p>
 <ul>
-  <li>Qué es una película –muestra de sucesión de imágenes</li>
+  <li>Qué es una película</li>
   <li>Procesos de restauración</li> 
   <li>Taller de restauración y clasificación técnica</li>
   <li>Muestra de restauración óptica</li>
