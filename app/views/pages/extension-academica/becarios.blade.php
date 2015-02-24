@@ -38,6 +38,12 @@
 	<p>
 		Con el objetivo de contribuir al desarrollo profesional de los estudiantes universitarios, la Filmoteca de la UNAM pone a su alcance la iniciativa que les permitirá incorporarse dentro de actividades vinculadas con su formación académica. 
 	</p>
+	<p>
+		El programa recibe un número determinado de postulantes por semestre, por lo cual es necesario estar pendiente de la publicación de la {{ HTML::link(
+		'/pages/extension-academica/convocatoria-becarios',
+		'Convocatoria' )                            
+		}} a través de este medio.
+	</p>
 
 <ul>
 	<div class="informacion">
@@ -58,7 +64,9 @@
 						<li>Entregar Historia Académica actualizada.</li>
 						<li>Entregar copia de identificación oficial.</li>
 						<li>Enviar al correo electrónico <a href="mailto:nadina1020@gmail.com">nadina1020@gmail.com  </a>formato de solicitud para ingresar en el Programa. <br>
-							<a href="http://www.filmoteca.unam.mx/amiba/images/recomendaciones/solicitudalumno.pdf">Formato de inscripción</a></li>
+						</li>
+							<img src="/assets/imgs/descarga-PDF.png">
+								<a href="http://filmoteca.dev/pdf/becarios/formato-inscripcion-Becarios.pdf" target="_blank">Formato de solicitud</a>
 					</ol>
 					<br>
 				</div>
@@ -97,12 +105,5 @@
 	</div>
 </ul>
 
-		<p>
-			El programa recibe un número determinado de postulantes por semestre, por lo cual es necesario estar pendiente de la publicación de la {{ HTML::link(
-		'/pages/extension-academica/convocatoria-becarios',
-		'Convocatoria' )                            
-		}} a través de este medio.
-		</p>
-
-	</div>
-	@stop
+</div>
+@stop
