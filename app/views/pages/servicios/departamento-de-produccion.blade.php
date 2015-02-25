@@ -10,12 +10,16 @@
 @stop
 
 @section('sidebar')
-	@include('elements.menus.servicios', array('selected' => 6))
+	@include('elements.menus.servicios', array('selected' => 7))
 @stop
 
 
 
 @section('content')
+
+	<div class="img-servicios">
+		<img src="/imgs/servicios/produccion.jpg" aling="left">
+	</div>
 
 	<h1>Producción</h1>
 

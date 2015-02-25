@@ -10,7 +10,7 @@
 @stop
 
 @section('sidebar')
-	@include('elements.menus.servicios', array('selected' => 7))
+	@include('elements.menus.servicios', array('selected' => 8))
 @stop
 
 
