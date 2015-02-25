@@ -3,39 +3,42 @@
         <div class="main-carousel">
             <div>
                 <div class="caption">
-                    <div id="title">BORIS GOLDENBLANK
+                    <div id="title">
                     </div>
                     <br>
-                    <div id="text">La Filmoteca de la UNAM lamenta profundamente el fallecimiento de BORIS GOLDENBLANK, una de las figuras más destacadas en el ámbito cinematográfico de jalisco, quien será recordado no solamente por su extensa obra fílmica, sino por su carrera como docente.
+                    <div id="text">
                     </div>   
                 </div>
-                <img src="/imgs/home/slider-home/Boris-Goldenblank.jpg" class="img-responsive">
+                <a href="{{ URL::to('exhibition') }}">
+                <img src="/imgs/home/slider-home/carrusel_miyazakiene.jpg" '' class="img-responsive">
+                </a>
+
             </div>
             <div>
                 <div class="caption">
-                    <div id="title">AMBULANTE
+                    <div id="title">
                     </div>
-                    <div id="text">GIRA DE DOCUMENTALES 2015
-                        <br><p>Del 30 de febrero al 5 de marzo</p>
-                        <a href="{{ URL::to('exhibition') }}">Consulta la programación aquí</a>
+                    <div id="text">
+                        <br><p></p>
+                        <a href="{{ URL::to('exhibition') }}"></a>
+                    </div>
+                </div>
+                <a href="http://aliaseditorial.com/colecciones/la-formula-secreta/">
+                <img src="/imgs/home/slider-home/carrusel_librogamez.jpg" 'Libro la Fórmula secreta' class="img-responsive">
+            	</a>
+            </div>
+            <div>
+                <div class="caption">
+                    <div id="title">
+                    </div>
+                    <div id="text">
                     </div>
                 </div>
                 <a href="{{ URL::to('exhibition') }}">
-                <img src="/imgs/home/slider-home/ambulante-gira-de-documentales.jpg" class="img-responsive">
+                <img src="/imgs/home/slider-home/carrusel_pelicula_temporada.jpg" 'películas de temporada' class="img-responsive">
             	</a>
             </div>
-            <div>
-                <div class="caption">
-                    <div id="title">CORTO MÓVIL
-                    </div>
-                    <div id="text">CERRAMOS INSCRIPCIONES. Tienes hasta el 5 de febrero!!
-                    </div>  
-                </div>
-                <a href="/pages/concursos/convocatoria-corto-movil">
-                <img src="/imgs/home/slider-home/corto-movil.jpg" class="img-responsive">
-            	</a>
-            </div>
-            <div>
+            <!-- <div>
                 <div class="caption">
                     <div id="title">CINE INDEPENDIENTE
                     </div>
@@ -46,7 +49,7 @@
                 <a href="{{ URL::to('exhibition') }}">
                 <img src="/imgs/home/slider-home/cine-independiente.jpg" class="img-responsive">
                 </a>   
-            </div>
+            </div> -->
 
         </div>
     </div>
