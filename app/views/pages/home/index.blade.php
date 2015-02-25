@@ -69,7 +69,7 @@
 						<div class="header">
 							<h4>Exposiciones</h4>
 							<h5>Cine surealismo</h5>
-							<span>Sede: Filmoteca UNAM</span><br><span class="see-more"><a href="">Ver más</a></span>
+							<span>Sede: Filmoteca UNAM</span><br><span class="see-more"><a href="/pages/press/exposiciones-museografia">Ver más</a></span>
 						</div>
 						<div class="image">
 							<img src="/imgs/home/exposiciones.jpg">
@@ -108,10 +108,10 @@
 
 <div class="toolbar-fixed social-networks-toolbar visible-lg">
 	<a href="https://twitter.com/ButacaUNAM"><span class="icon-twitter"></span></a>
-	<a href="https://www.facebook.com/FilmotecaUNAM"><span class="icon-facebook"></span></a>
-	<a href="https://www.youtube.com/user/FilmotecaUNAM"><span class="icon-youtube"></span></a>
-	<a href="http://vimeo.com/filmotecaunam/videos"><span class="icon-vimeo"></span></a>
-	<a href="https://plus.google.com/117296642645060485198/posts"><span class="icon-google-plus"></span></a>
+	<a href="https://www.facebook.com/FilmotecaUNAM" target="blank"><span class="icon-facebook"></span></a>
+	<a href="https://www.youtube.com/user/FilmotecaUNAM" target="blank"><span class="icon-youtube"></span></a>
+	<a href="http://vimeo.com/filmotecaunam/videos" target="blank"><span class="icon-vimeo"></span></a>
+	<a href="https://plus.google.com/117296642645060485198/posts" target="blank"><span class="icon-google-plus"></span></a>
 </div>
 
 <div class="ceil-toolbar toolbar-fixed visible-lg">
