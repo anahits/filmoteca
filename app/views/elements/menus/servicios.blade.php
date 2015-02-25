@@ -12,8 +12,7 @@ $menu = array(
 
 	array('Laboratorio cinematográfico', '/pages/servicios/laboratorio-cinematografico'),
 
-	//esta página queda pendiente hasta tener información
-	/*array('Laboratorio digital', '/pages/servicios/laboratorio-digital'),*/
+	array('Laboratorio digital', '/pages/servicios/laboratorio-digital'),
 
 	array('Préstamo y alquiler de películas', '/pages/servicios/prestamo-y-alquiler-de-peliculas'),
 
