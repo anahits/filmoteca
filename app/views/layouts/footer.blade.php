@@ -30,8 +30,8 @@
 
 			<div class="col-md-4">
 				<div>
-					<a href="https://twitter.com/ButacaUNAM"><span class="icon icon-twitter"></span></a>
-					<a href="https://www.facebook.com/FilmotecaUNAM"><span class="icon icon-facebook"></span></a>
+					<a href="https://twitter.com/ButacaUNAM" target="blank"><span class="icon icon-twitter"></span></a>
+					<a href="https://www.facebook.com/FilmotecaUNAM" target="blank"><span class="icon icon-facebook"></span></a>
 					<a href="{{ URL::to('contact') }}"><span class="icon icon-mail"></span></a>
 				</div>
 				<div>
