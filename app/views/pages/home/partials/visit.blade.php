@@ -25,6 +25,11 @@
 					<img src="/imgs/home/visit/cine-y-revolucion-mexicana.jpg" alt="El cine y la revolución mexicana" class="img-responsive">
 				</a>
 			</div>
+			<div>
+				<a href="/pages/press/libros-digitales">
+					<img src="/imgs/home/visit/libros-digitales.jpg" alt="Libros digitales" class="img-responsive">
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
