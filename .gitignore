@@ -20,20 +20,20 @@ Thumbs.db
 
 /others
 
-/public/*
+/htdocs/*
 /workbench
 
-!/public/assets
-!/public/assets/js
-!/public/assets/imgs
-!/public/assets/css/imgs
-!/public/assets/sass
+!/htdocs/assets
+!/htdocs/assets/js
+!/htdocs/assets/imgs
+!/htdocs/assets/css/imgs
+!/htdocs/assets/sass
 
-!/public/bower.json
-!/public/apps
-!/public/index.php
-!/public/.htaccess
-!/public/resources/.gitkeep
+!/htdocs/bower.json
+!/htdocs/apps
+!/htdocs/index.php
+!/htdocs/.htaccess
+!/htdocs/resources/.gitkeep
 
 
 
