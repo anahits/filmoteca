@@ -39,9 +39,9 @@ echo $sql | mysql
 
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
-  DocumentRoot "/var/www/public"
+  DocumentRoot "/var/www/htdocs"
   ServerName filmoteca.dev
-  <Directory "/var/www/public">
+  <Directory "/var/www/htdocs">
     AllowOverride All
     Require all granted
   </Directory>
