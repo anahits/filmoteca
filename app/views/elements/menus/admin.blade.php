@@ -8,16 +8,16 @@
 		</button>
 		<ul class="dropdown-menu">
 			<li>
-				{{ HTML::link('/admin/exhibition/app#/index', 'Ver toda la programación') }}
+				{{ HTML::link('/admin/exhibition/app#/exhibitions', 'Ver toda la programación') }}
 			</li>
 			<li>
-				{{ HTML::link('/admin/exhibition/app#/create', 'Agregar exhibiciones') }}
+				{{ HTML::link('/admin/exhibition/app#/exhibitions/create', 'Agregar exhibiciones') }}
 			</li>
 			<li>
-				{{ HTML::linkRoute('admin.film.index', 'Ver todas las películas') }}
+				{{ HTML::link('/admin/exhibition/app#/films', 'Ver todas las películas') }}
 			</li>
 			<li>
-				{{ HTML::linkRoute('admin.film.create', 'Agregar película') }}
+				{{ HTML::link('/admin/exhibition/app#/films/create', 'Agregar película') }}
 			</li>
 			<li>
 				{{ HTML::linkRoute('admin.auditorium.index', 'Ver todas las salas') }}
