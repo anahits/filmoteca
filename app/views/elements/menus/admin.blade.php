@@ -17,7 +17,7 @@
 				{{ HTML::link('/admin/exhibition/app#/films', 'Ver todas las películas') }}
 			</li>
 			<li>
-				{{ HTML::link('/admin/exhibition/app#/exhibitions/create', 'Agregar película') }}
+				{{ HTML::link('/admin/exhibition/app#/films/create', 'Agregar película') }}
 			</li>
 			<li>
 				{{ HTML::linkRoute('admin.auditorium.index', 'Ver todas las salas') }}
