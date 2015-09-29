@@ -18,7 +18,7 @@ $menu = array(
 
 	array('Directorio', '/pages/quienes-somos/directorio'),
 
-	array('55 Aniversario', '/pages/Aniversario/index'));
+	array('55 Aniversario', '/pages/aniversario55/index'));
 ?>
 
 @include('elements.menus.static-pages', compact('menu','selected'))
