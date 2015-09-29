@@ -1,5 +1,10 @@
 @section('scripts')
 
+{{ HTML::scripts(array(
+  '/bower_components/jquery/dist/jquery.min.js',
+  '/bower_components/bootstrap/dist/js/bootstrap.min.js',
+  '/bower_components/slick.js/slick/slick.min.js')) }}
+
 <!-- This plugin requires jquery 1.7 to work. This jQuery's version is packaged with slider-camera plugin. -->
 <script type='text/javascript' src='/bower_components/slider-camera/scripts/jquery.min.js'></script>
 <script type='text/javascript' src='/bower_components/slider-camera/scripts/jquery.easing.1.3.js'></script>
@@ -33,8 +38,8 @@
 		</a>
 	</li>
 	<li>
-		<a href="/pages/difusion/exposiciones-recientes">
-			Exposiciones recientes
+		<a href="/pages/difusion/exposiciones-anteriores">
+			Exposiciones anteriores
 		</a>
 	</li>
 	<li class="active">

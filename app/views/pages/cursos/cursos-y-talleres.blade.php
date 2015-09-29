@@ -9,6 +9,12 @@
     '/bower_components/requirejs/require.js', 
     ['data-main' =>'/apps/pages/courses/App.js'])
   }}
+
+  {{ HTML::scripts(array(
+  '/bower_components/jquery/dist/jquery.min.js',
+  '/bower_components/bootstrap/dist/js/bootstrap.min.js',
+  '/bower_components/slick.js/slick/slick.min.js')) }}
+
 @stop
 
 @section('styles')

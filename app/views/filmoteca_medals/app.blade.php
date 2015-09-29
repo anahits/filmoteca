@@ -9,6 +9,11 @@
 		['data-main' =>'/apps/pages/filmoteca-medal/App.js'])
 	}}
 	
+	{{ HTML::scripts(array(
+  '/bower_components/jquery/dist/jquery.min.js',
+  '/bower_components/bootstrap/dist/js/bootstrap.min.js',
+  '/bower_components/slick.js/slick/slick.min.js')) }}
+
 
 	{{-- 
 		Este modulo local regresara un lista de ganadores de la medalla filmoteca.

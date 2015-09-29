@@ -1,5 +1,8 @@
 @section('scripts')
 {{ HTML::scripts(array(
+    '/bower_components/jquery/dist/jquery.min.js',
+    '/bower_components/bootstrap/dist/js/bootstrap.min.js',
+    '/bower_components/slick.js/slick/slick.min.js',
     '/bower_components/jqueryui/ui/minified/jquery.ui.core.min.js',
     '/bower_components/jqueryui/ui/minified/jquery.ui.widget.min.js',
     '/bower_components/jqueryui/ui/minified/jquery.ui.accordion.min.js',
