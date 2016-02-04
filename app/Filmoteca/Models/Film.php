@@ -15,6 +15,26 @@ class Film extends Eloquent implements StaplerableInterface
 
     protected $appends = ['cover'];
 
+    protected $fillable = [
+        'id',
+        'title',
+        'original_title',
+        'duration',
+        'genre_id',
+        'director',
+        'script',
+        'photographic',
+        'music',
+        'edition',
+        'production',
+        'cast',
+        'synopsis',
+        'trailer',
+        'notes',
+        'years',
+        'image'
+    ];
+
     public function __construct(array $attributes = array())
     {
         $this->hasAttachedFile('image', [

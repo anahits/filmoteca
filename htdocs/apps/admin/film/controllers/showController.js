@@ -10,13 +10,16 @@
 
     'use strict';
 
-    var controller = function ($scope, film) {
+    var controller = function ($scope, $sce, film) {
 
         $scope.film = film;
+
+        $scope.film.trailer = $sce.trustAsHtml(film.trailer);
     };
 
     controller.$inject = [
         '$scope',
+        '$sce',
         'film'
     ];
 

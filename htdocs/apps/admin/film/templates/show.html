@@ -1,7 +1,13 @@
 <div class="row">
     <div class="col-sm-12">
         <div data-ng-show="film" class="panel panel-default ng-cloak">
-            <div class="panel-heading">{{film.title}}</div>
+            <div class="panel-heading">
+                {{film.title}}
+                <a class="btn btn-info pull-right" data-ng-href="#/films/{{ film.id }}/edit">
+                    Editar
+                </a>
+                <div class="clearfix"></div>
+            </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-sm-4">

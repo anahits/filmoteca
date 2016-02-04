@@ -127,7 +127,10 @@ class FilmController extends ApiController
      */
     public function update($id)
     {
-        $updatedFilm = $this->filmService->updateFilm($id, Input::all());
+        $data = Input::all();
+        $data['years'] = Input::get('years', '');
+
+        $updatedFilm = $this->filmService->updateFilm($id, $data);
 
         return $updatedFilm;
     }

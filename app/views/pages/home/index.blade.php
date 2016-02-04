@@ -68,10 +68,10 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="well well-sm">
-					<h4 class="text-center"><a href="http://www.libros.unam.mx/" title="Libros UNAM">Libros UNAM</a></h4>
-				</div>
-			</div>
+				<a href="http://online.fliphtml5.com/bsrf/xwtv/" title="Catálogo" target="_blank">
+                  	<img src="/imgs/libreria/banner-catalogo.jpg" alt="Catálogo" class="img-responsive">
+                </a>
+   			</div>
 		</div>
 
 	</div>

@@ -16,13 +16,16 @@
 
     'use strict';
 
-    var controller = function ($scope, $filter, $location, $routeParams, filmService, filmFactory) {
+    var controller = function ($scope, $filter, $location, $routeParams, filmService, filmFactory, tinyMCEOptions) {
 
         var YEARS_AVAILABLE = _.range(filmService.MIN_YEAR, filmService.MAX_YEAR);
 
         $scope.genres       = genres;
         $scope.film         = filmFactory.make();
         $scope.saving       = false;
+        $scope.rawText      = "empty";
+
+        $scope.tinymceOptions = tinyMCEOptions;
 
         $scope.searchYear = function ($query) {
 
@@ -75,6 +78,7 @@
                 .then(function (rawFilm) {
 
                     angular.extend($scope.film, rawFilm);
+                    $scope.rawText = 'filled';
                 });
         });
     };
@@ -85,7 +89,8 @@
         '$location',
         '$routeParams',
         'filmService',
-        'filmFactory'
+        'filmFactory',
+        'tinyMCEOptions',
     ];
 
     return controller;

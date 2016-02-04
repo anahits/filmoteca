@@ -38,6 +38,10 @@
 
         $scope.destroy = function ($index) {
 
+            if (!window.confirm("Confirma la accion de borrar")) {
+                return;
+            }
+
             exhibitionService
                 .destroy($scope.exhibitions[$index].id)
                 .then(function () {

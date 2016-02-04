@@ -75,6 +75,8 @@ var require = {
         "ngSanitize":            "angular-sanitize/angular-sanitize.min",
         "angular.filter":        "angular-filter/dist/angular-filter.min",
         "ngTagsInput":           "ng-tags-input/ng-tags-input.min",
+        "tinyMCE":               "tinymce-dist/tinymce.min",
+        "uiTinyMCE":             "angular-ui-tinymce/src/tinymce",
         //From laravel packages
         "syntara":               "/packages/mrjuliuss/syntara/assets/js/dashboard/base",
 
@@ -105,13 +107,12 @@ var require = {
         "ngAnimate":             ["angular"],
         "ngCookies":             ["angular"],
         "ngSanitize":            ["angular"],
-        "textAngularRangy":      ["angular"],
-        "textAngularSanatize":   ["angular"],
         "angucomplete-alt":      ["angular"],
         "ngTagsInput":           ["angular"],
         "angular.filter":        ["angular"],
         "ui.bootstrap":          ["angular"],
         "angular-locale-mx":     ["angular"],
+        "uiTinyMCE":             ["angular"],
         "bootstrap":             ["jquery"],
         "syntara":               ["jquery", "bootstrap"],
         "jquery-ui":             ["jquery"],

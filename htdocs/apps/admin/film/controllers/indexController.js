@@ -42,6 +42,10 @@
 
         $scope.destroy = function ($index) {
 
+            if (!window.confirm("Confirma la accion de borrar")) {
+                return;
+            }
+
             filmService
                 .destroy($scope.films[$index].id)
                 .then(function (film) {

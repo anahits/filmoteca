@@ -13,12 +13,15 @@
             'admin/film/factories/filmFactory',
             'admin/film/factories/filmTransformer',
             'admin/film/configs/$route',
+            'admin/film/constants/tinyMCEOptions',
 
             'ngTagsInput',
             'angular.filter',
             'ngRoute',
             'ngSanitize',
-            'file-model'
+            'file-model',
+            'tinyMCE',
+            'uiTinyMCE'
         ],
         factory);
 })(function (
@@ -29,7 +32,8 @@
     filmService,
     filmFactory,
     filmTransformer,
-    $routeConfig
+    $routeConfig,
+    tinyMCEOptions
 ) {
 
     'use strict';
@@ -39,7 +43,8 @@
         'angular.filter',
         'ngRoute',
         'ngSanitize',
-        'FileModel'
+        'FileModel',
+        'ui.tinymce'
     ])
         .controller('admin.film.controllers.indexController', indexController)
         .controller('admin.film.controllers.createController', createController)
@@ -48,4 +53,5 @@
         .service('filmTransformer', filmTransformer)
         .factory('filmFactory', filmFactory)
         .config($routeConfig)
+        .constant('tinyMCEOptions', tinyMCEOptions)
 });

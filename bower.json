@@ -23,13 +23,7 @@
     "bootstrap": "3.2.*",
     "jquery-form": "3.*",
     "jquery-validate": "1.12.*",
-    "fancybox": "2.1.*",
-    "jquery.scrollTo": "1.4.*",
-    "jquery.serialScroll": "1.2.4",
-    "jqueryui": "1.10.*",
     "original-hover-effects": "1.0.*",
-    "jquery.nicescroll": "*",
-    "bootstrap-datepicker": "1.3.*",
     "domready": "1.0.*",
     "lodash": "2.4.*",
     "angucomplete-alt": "0.0.18",
@@ -40,7 +34,6 @@
     "jquery-ui-slider-pips": "1.7.2",
     "slick.js": "~1.3.15",
     "bootstrap-sass-official": "3.3.5",
-    "bootstrapvalidator": "0.5.*",
     "parsleyjs": "2.*",
     "ckeditor": "4.4.*",
     "ckeditor-youtube-plugin": "https://github.com/pollin14/ckeditor-youtube-plugin.git",
@@ -53,7 +46,7 @@
     "angular-cookies": "1.2.*",
     "angular-animate": "1.2.*",
     "angular-sanitize": "1.2.*",
-    "textAngular": "1.3.*",
+    "angular-ui-tinymce": "0.0.10",
     "ng-tags-input": "2.3.*"
   }
 }

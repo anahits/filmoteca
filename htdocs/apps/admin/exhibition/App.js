@@ -33,6 +33,7 @@
             'admin.exhibition.constants/messages',
             'admin.exhibition.configs/$http',
             'admin.exhibition.configs/$route',
+            'admin/film/constants/tinyMCEOptions',
 
             'angucomplete-alt',
             'ngRoute',
@@ -49,6 +50,8 @@
             'syntara',
             'jquery',
             'bootstrap',
+            'tinyMCE',
+            'uiTinyMCE'
         ],
         factory);
 })(function (
@@ -72,7 +75,8 @@
     interceptorFactory,
     messages,
     httpConfig,
-    routeConfig
+    routeConfig,
+    tinyMCEOptions
 ) {
 
     'use strict';
@@ -85,6 +89,7 @@
             'angularMoment',
             'angular.filter',
             'FileModel',
+            'ui.tinymce',
 
             'admin.film',
             'admin.exhibition.services.NotificationService'
@@ -108,6 +113,7 @@
         .factory('scheduleFactory', scheduleFactory)
         .factory('interceptorFactory', interceptorFactory)
         .constant('messages', messages)
+        .constant('tinyMCEOptions', tinyMCEOptions)
         .config(routeConfig)
         .config(httpConfig)
         .run(['$templateCache', function ($templateCache) {

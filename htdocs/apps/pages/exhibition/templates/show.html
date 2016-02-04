@@ -69,7 +69,8 @@
                         <b class="text-uppercase">{{ field.label }}: </b><span ng-bind-html="field.value"></span>
                     </p>
                     <div ng-show="exhibition.notes">
-                        <b class="text-uppercase">Notas de exhibición: </b>{{ exhibition.notes }}
+                        <b class="text-uppercase">Notas de exhibición: </b>
+                        <p ng-bind-html="exhibition.notes"></p>
                     </div>
                 </div>
             </div>
