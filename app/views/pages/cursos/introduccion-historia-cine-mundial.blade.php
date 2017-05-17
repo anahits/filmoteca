@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-Introducción a la Historia del cine mundial
+	Introducción a la Historia del cine mundial
 </li>
 @stop
 

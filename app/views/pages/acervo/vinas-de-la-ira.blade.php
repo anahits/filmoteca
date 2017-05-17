@@ -5,8 +5,18 @@
 			Acervo
 		</a>
 	</li>
+	<li>
+		<a href="/pages/acervo/restauracion">
+			Restauración
+		</a>
+	</li>
+	<li>
+		<a href="/pages/acervo/historias-recuperadas">
+			Historias recuperadas
+		</a>
+	</li>
 	<li class="active">
-		Restauración
+		Las viñas de la ira
 	</li>
 @stop
 

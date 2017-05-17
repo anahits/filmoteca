@@ -2,6 +2,12 @@
     background: url('../imgs/loading.gif') no-repeat;
     display: inline-block;
     vertical-align: middle;
+    padding-left: 36px;
+    background-size: 32px 32px;
+}
+
+.loading-xsm{
+    background-size: 25px 25px;
 }
 
 .loading-sm {
@@ -16,4 +22,11 @@
 
 .loading-lg {
     background-size: 144px 144px;
+}
+
+.loading-box-md {
+    height: 128px;
+    width: 128px;
+    background-size: 128px 128px;
+    display: block;
 }

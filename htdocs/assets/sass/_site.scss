@@ -34,6 +34,8 @@ a{
 	.upper-navbar{
 		width: 100%;
 		background-color: $tertiary-color;
+		padding-top: 25px !important; 
+		padding-bottom: 10px !important;
 		
 		> div{
 			max-width: $screen-md;
@@ -41,6 +43,33 @@ a{
 
 		a{			
 			padding: 15px;
+		}
+
+		.searchmenucontent{
+			padding-bottom: 0px !important;
+		}
+
+		.text-right.col-xs-6.col-sm-6.col-md-8.col-lg-10{
+		    margin-top: -19px !important; 
+		    margin-bottom: 8px;
+		    padding-left: 0px !important;
+		}
+
+		.text-right.col-xs-3.col-sm-3.col-md-4.col-lg-2{
+		    background-color: #e5e5e5 !important;
+		    width: 290px !important;
+		    margin-top: -5px !important;
+		}
+
+		.home-search{
+			height: 13px !important;
+			margin-top: -29px !important;
+			width: 290px !important;
+			padding-top: 4px !important;
+		}
+
+		.input-group.home-search{
+			width: 290px !important;
 		}
 	}
 
@@ -65,6 +94,24 @@ a{
 		.unam-text, .filmoteca-text{
 			margin: 22px;
 			color: white;
+		}
+
+		.sm-logo-unam{
+
+			span{
+				font-size: 12px !important;
+			}
+		}
+		
+		.sm-logo-filmo{
+
+			span{
+				font-size: 12px !important;
+			}
+			
+			img{
+				width: 100px !important;
+			}
 
 		}
 	}
@@ -76,7 +123,7 @@ a{
 }
 
 .container-fluid{
-	max-width: $screen-md;
+	max-width: 1024px !important;
 
 	.content{
 		margin-bottom: 25px;
@@ -147,6 +194,10 @@ a{
     }
 }
 
+h2{
+	color: $primary-color;
+}
+
 h5{
 	color: $primary-color;
 }
@@ -159,6 +210,16 @@ h5{
 	max-width: 30px;
 }
 
+.col-md-5 a {
+	font-size: 11px;
+	padding-left: 10px;
+
+}
+
+.auditorium-name {
+	color: #2d2d2d;
+}
+
 .col-sm-12 .image-billboard > .image-size-icon{
 	max-width: 100%;
     width: 250px;
@@ -168,6 +229,9 @@ h5{
 	max-width: 150px;
 }
 
+.col-md-4 img {
+	margin: 15px 0 10px;
+}
 
 .image-size-thumbnail{
 	max-width: 150px;
@@ -188,4 +252,4 @@ h5{
     border-bottom-right-radius: 3px;
     border-top: 1px solid #ddd;
     padding: 4px 15px;
-   }
+}

@@ -2,7 +2,7 @@
 
 namespace Filmoteca\Transformers;
 
-use Filmoteca\Models\Film;
+use Filmoteca\Models\Exhibitions\Film;
 use Illuminate\Support\Collection;
 
 class FilmTransformer extends Transformer

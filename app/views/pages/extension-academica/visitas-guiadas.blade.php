@@ -36,7 +36,7 @@
 
 
 @section('sidebar')
-   @include('elements.menus.extension-academica', array('selected' => 3))
+   @include('elements.menus.extension-academica', array('selected' => 4))
 @stop
 
 

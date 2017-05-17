@@ -52,3 +52,7 @@ App::singleton('iconographic', function()
 				->get()
 				->lists('name','id');
 });
+
+define('MYSQL_DATE_FORMAT', 'Y-m-d');
+define('MYSQL_TIME_FORMAT', 'H:i:s');
+define('MYSQL_DATE_TIME_FORMAT', 'Y-m-d H:i:s');

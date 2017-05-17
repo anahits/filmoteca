@@ -16,9 +16,11 @@ $menu = array(
 
 	array('Libro Filmoteca: 50 años', '/pages/quienes-somos/libro-filmoteca50'),
 
-	array('Directorio', '/pages/quienes-somos/directorio'),
+	array('55 Aniversario', '/pages/aniversario55/index'),
 
-	array('55 Aniversario', '/pages/aniversario55/index'));
+	array('FICUNAM', '/pages/quienes-somos/ficunam'),
+
+	array('Directorio', '/pages/quienes-somos/directorio'));
 ?>
 
 @include('elements.menus.static-pages', compact('menu','selected'))

@@ -17,19 +17,7 @@ return [
     'gtm'=> [
         'tracker-id' => 'UI-123456'
     ],
-    'deploy' => [
-        'defaults' => [
-            'branch'            => 'master',
-            'tmp-dir'           => '/tmp/deploy',
-            'public-dir'        => 'htdocs',
-            'repository-url'    => 'https://github.com/pollin14/filmoteca',
-            'server-dir'        => '/vagrant/site',
-            'server'            => '192.168.33.12',
-            'user'              => 'vagrant',
-            'project-name'      => 'filmoteca'
-        ],
-        'version' => [
-            'file-name' => 'version.txt'
-        ]
+    'filmoteca-medals' => [
+        'minYear' => 1985
     ]
 ];

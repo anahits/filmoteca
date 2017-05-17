@@ -294,14 +294,6 @@
             {
                 label : 'Reparto',
                 value : film.cast
-            },
-            {
-                label : 'Sinopsis',
-                value : film.synopsis
-            },
-            {
-                label : 'Notas',
-                value : film.notes
             }
         ];
     };

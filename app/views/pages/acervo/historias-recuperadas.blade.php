@@ -5,8 +5,13 @@
 			Acervo
 		</a>
 	</li>
+	<li>
+		<a href="/pages/acervo/restauracion">
+			Restauración
+		</a>
+	</li>	
 	<li class="active">
-		Restauración / Historias recuperadas
+		Historias recuperadas
 	</li>
 @stop
 

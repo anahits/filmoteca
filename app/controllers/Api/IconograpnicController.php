@@ -24,7 +24,7 @@ class IconographicController extends ApiController
 	 */
 	public function store()
 	{
-		$data = Input::except('_token');
+		$data = Input::except('_token'); /* Getting Only Some Of The Request Input */
 
 		$resource = $this->repository->store($data);
 
@@ -43,7 +43,10 @@ class IconographicController extends ApiController
     public function update($id)
     {
         $data = [
-            'name' => Input::get('name')
+            'name' => Input::get('name'),
+            'description' => Input::get('description'),
+            'since' => Input::get('since'),
+            'until' => Input::get('until')
         ];
 
         if( Input::hasFile('image')) {

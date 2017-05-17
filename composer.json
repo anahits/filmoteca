@@ -1,9 +1,20 @@
 {
-    "name": "laravel/laravel",
+    "name": "filmoteca/filmoteca",
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:filmoteca/static-pages.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:filmoteca/deployment.git"
+        }
+    ],
     "require": {
+        "php": "5.5.*",
         "mailgun/mailgun-php": "1.8",
         "laravel/framework": "4.2.17",
         "codesleeve/laravel-stapler": "1.0.01",
@@ -14,7 +25,10 @@
         "fitztrev/laravel-html-minify": "1.0.3",
         "fbf/laravel-contact-form": "0.1.0",
         "frozennode/administrator": "4.16.7",
-        "devitek/yaml-translation": "0.1.2"
+        "devitek/yaml-translation": "0.1.2",
+        "filmoteca/static-pages": "dev-master",
+        "monarobase/country-list": "1.2.*",
+        "maatwebsite/excel": "1.3.0"
     },
     "autoload": {
         "classmap": [
@@ -45,16 +59,27 @@
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
+        ],
+        "migrate": [
+            "php artisan migrate --env=$LARAVEL_ENV",
+            "php artisan migrate --package=\"cartalyst/sentry\" --env=$LARAVEL_ENV",
+            "php artisan migrate --package=\"mrjuliuss/syntara\" --env=$LARAVEL_ENV",
+            "php artisan migrate --package=\"filmoteca/static-pages\" --env=$LARAVEL_ENV"
+        ],
+        "publish-assets": [
+            "php artisan asset:publish --env=$LARAVEL_ENV",
+            "php artisan asset:publish mrjuliuss/syntara --env=$LARAVEL_ENV",
+            "php artisan asset:publish frozennode/administrator --env=$LARAVEL_ENV",
+            "php artisan asset:publish filmoteca/static-pages --env=$LARAVEL_ENV"
         ]
     },
     "config": {
         "preferred-install": "dist"
     },
     "minimum-stability": "stable",
-
     "require-dev": {
         "way/generators": "~2.0",
-        "monarobase/country-list": "1.2.*",
-        "maatwebsite/excel": "1.3.0"
+        "barryvdh/laravel-debugbar": "1.8.x",
+        "fzaninotto/faker": "1.5.0"
     }
 }

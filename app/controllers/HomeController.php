@@ -1,43 +1,44 @@
 <?php
 
-use Filmoteca\Repository\ExhibitionsRepository;
 use Filmoteca\Repository\NewsRepository;
-use Filmoteca\ExhibitionsManager;
+use Filmoteca\Exhibition\ExhibitionsManager;
 use Filmoteca\Repository\AdvertisementRepository;
 use Filmoteca\Repository\CarouselsRepository;
+use Carbon\Carbon;
 
-class HomeController extends BaseController {
-
-	public function __construct(
-        ExhibitionsRepository $exhibitionRepository,
+/**
+ * Class HomeController
+ */
+class HomeController extends BaseController
+{
+    /**
+     * @param NewsRepository $newsRepository
+     * @param ExhibitionsManager $exhibitionsManager
+     * @param AdvertisementRepository $advertisementRepository
+     * @param CarouselsRepository $carouselRepository
+     */
+    public function __construct(
         NewsRepository $newsRepository,
         ExhibitionsManager $exhibitionsManager,
         AdvertisementRepository $advertisementRepository,
         CarouselsRepository $carouselRepository
     ) {
-        $this->newsRepository           = $newsRepository;
-		$this->exhibitionRepository     = $exhibitionRepository;
-        $this->exhibitionsManager       = $exhibitionsManager;
-        $this->advertisementRepository  = $advertisementRepository;
-        $this->carouselRepository       = $carouselRepository;
-	}
+        $this->newsRepository = $newsRepository;
+        $this->exhibitionsManager = $exhibitionsManager;
+        $this->advertisementRepository = $advertisementRepository;
+        $this->carouselRepository = $carouselRepository;
+    }
 
-	public function index()
-	{
-		$exhibitions = $this->exhibitionRepository->search('today');
-
-        $auditoriums = $this->exhibitionsManager->getAuditoriums($exhibitions);
-
-        $icons = $this->exhibitionsManager->getIcons($exhibitions);
-
-        $news = $this->newsRepository->lastNews(6);
-
+    public function index()
+    {
+        $date           = Carbon::today();
+        $calendar       = $this->exhibitionsManager->getCalendar($date);
+        $news           = $this->newsRepository->lastNews(6);
         $advertisements = $this->advertisementRepository->all();
+        $carousels      = $this->carouselRepository->findToHome();
 
-        $carousels = $this->carouselRepository->findToHome();
+        $viewData = compact('news', 'advertisements', 'carousels', 'calendar', 'date');
 
-        $viewData = compact('exhibitions', 'news', 'icons', 'auditoriums', 'advertisements', 'carousels');
-
-		return View::make('pages.home.index', $viewData);
-	}
+        return View::make('pages.home.index', $viewData);
+    }
 }

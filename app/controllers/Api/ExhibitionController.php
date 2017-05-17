@@ -3,7 +3,7 @@
 namespace Api;
 
 use Filmoteca\Repository\ExhibitionsRepository;
-use Filmoteca\ExhibitionsManager as Manager;
+use Filmoteca\Exhibition\ExhibitionsManager as Manager;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Pagination\Factory as Paginator;

@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-  La música y el cine
+	La música y el cine
 </li>
 @stop
 

@@ -5,9 +5,9 @@ $menu = array(
 
 	array('Puntos de venta', '/pages/libreria/libreria'),
 
-	array('Tienda en línea', '/pages/libreria/proximamente-venta-linea')
+	array('Tienda en línea', '/pages/libreria/proximamente-venta-linea'),
 
-	/*array('Catálogo', '/pages/libreria/catalogo')*/);
+	array('Catálogo', '/pages/libreria/catalogo'));
 
 ?>
 

@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-Historia (s) del cine I 1880-1970
+	Historia (s) del cine I 1880-1970
 </li>
 @stop
 

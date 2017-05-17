@@ -9,21 +9,54 @@
                 </button>
             </div>
             <div class="panel-body">
-                <div class="row">
+                <div class="row margin">
                     <div class="col-sm-12">
                         <ul class="icons-list">
                             <li data-ng-repeat="icon in iconsAvailable">
-                                <div class="text-center">
-                                    <img data-ng-src="{{icon.icon}}" class="image-size-icon" data-ng-click="edit(icon)">
-                                <span class="icon-name">
-                                    {{ icon.name }}
-                                </span>
+                                <table>
+                                    <tr>
+                                        <td><label for="image" class="col-sm-2 control-label text-left">Icono</label></td>
+                                        <td>
+                                            <img data-ng-src="{{icon.icon}}" class="image-size-icon" data-ng-click="edit(icon)">
+                                            <span class="icon-name"></span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="name" class="col-sm-2 control-label text-left">Nombre</label></td>
+                                        <td>
+                                            <span class="icon-name">
+                                                {{ icon.name }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td><label for="description" class="col-sm-2 control-label text-left">Descripción</label></td>
+                                        <td>
+                                            <span class="icon-name">
+                                                {{ icon.description }}
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label for="periodo" class="col-sm-2 control-label text-left">Periodo</label></td>
+                                        <td>
+                                            <span class="icon-name">
+                                                De
+                                                {{ icon.since }}
+                                                a                                      {{ icon.until }}
+                                            </span>
+                                       </td>
+                                    </tr>
+
+                                </table>
+                                <div class="col-sm-6">
+                                        <a><span class="btn glyphicon glyphicon-remove" data-ng-click="destroy(icon.id)" title="Eliminar"> Eliminar</span></a>
                                 </div>
-                                <div>
-                                    <a><span class="btn glyphicon glyphicon-remove" data-ng-click="destroy(icon.id)" title="Eliminar"> Eliminar</span></a>
-                                </div>
-                                <div>
-                                    <a><span class="btn glyphicon glyphicon-pencil" data-ng-click="edit(icon)" title="Editar"> Editar</span></a>
+                                <div class="col-sm-6">
+                                        <a><span class="btn glyphicon glyphicon-pencil" data-ng-click="edit(icon)" title="Editar"> Editar</span></a>
                                 </div>
                             </li>
                         </ul>

@@ -1,35 +1,29 @@
 <?php
 
-class DatabaseSeeder extends Seeder {
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Eloquent::unguard();
 
-	/**
-	 * Run the database seeds.
-	 *
-	 * @return void
-	 */
-	public function run()
-	{
-		Eloquent::unguard();
+        DB::statement('SET foreign_key_checks = 0');
 
-		DB::statement('SET foreign_key_checks = 0');
+        $this->call('FilmsTableSeeder');
+        $this->call('TypesTableSeeder');
+        $this->call('ExhibitionsTableSeeder');
+        $this->call('BillboardsTableSeeder');
+        $this->call('SchedulesTableSeeder');
+        $this->call('AuditoriumsTableSeeder');
+        $this->call('GenresTableSeeder');
+        $this->call('CountriesTableSeeder');
+        $this->call('FilmotecaMedalsTableSeeder');
 
-		// $this->call('UserTableSeeder');
-		$this->call('FilmsTableSeeder');
+        DB::statement('SET foreign_key_checks = 1');
 
-		$this->call('ExhibitionFilmsTableSeeder');
-
-		$this->call('ExhibitionsTableSeeder');
-
-		$this->call('SchedulesTableSeeder');
-
-		$this->call('AuditoriumsTableSeeder');
-
-		$this->call('GenresTableSeeder');
-
-		$this->call('CountriesTableSeeder');
-
-		DB::statement('SET foreign_key_checks = 1');
-
-	}
-
+    }
 }

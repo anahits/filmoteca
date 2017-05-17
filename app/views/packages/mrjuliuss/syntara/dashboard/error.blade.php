@@ -1,12 +1,12 @@
 @extends('layouts.error')
 
 @section('title')
-    {{ $title }}
+    @lang($title)
 @stop
 
 @section('content')
     <div class="well">
-        <p class="text-center"><span class="h2">{{ $message }}</span>
+        <p class="text-center"><span class="h2">@lang($message)</span>
         <div class="text-center">
             <img src="{{ asset('assets/imgs/' . $code . '-error.jpg') }}">
         </div>

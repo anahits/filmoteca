@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-Cine Mexicano durante los gobiernos de 1896 a  2015
+	Cine Mexicano durante los gobiernos de 1896 a  2015
 </li>
 @stop
 

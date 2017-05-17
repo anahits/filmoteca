@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ asset('/assets/css/filmoteca.css')}}" />
 
         @yield('styles')
-
+        <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('apps/require.config.js') }}"></script>
 
         @yield('scripts')

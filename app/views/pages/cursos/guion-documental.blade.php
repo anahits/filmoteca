@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-  Fundamentos de guión para cine documental
+	Fundamentos de guión para cine documental
 </li>
 @stop
 

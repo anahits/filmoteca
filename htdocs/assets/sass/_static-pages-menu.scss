@@ -82,7 +82,7 @@
   /* Typography */
 
   font-family: Helvetica, Arial, sans-serif;
-  color: #9a0982;
+  color: $primary-color;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 1px 0 #fff;
@@ -110,10 +110,10 @@
 .static-pages-menu > ul li:hover > a {
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  background: #9a0982;
-  background: -webkit-linear-gradient(#9a0982, #6a0659);
-  background: -moz-linear-gradient(#9a0982, #6a0659);
-  background: linear-gradient(#9a0982, #6a0659);
+  background: $primary-color;
+  background: -webkit-linear-gradient($primary-color, #6a0659);
+  background: -moz-linear-gradient($primary-color, #6a0659);
+  background: linear-gradient($primary-color, #6a0659);
   border-color: transparent;
 }
 /* The arrow indicating a submenu */
@@ -127,7 +127,7 @@
   /* Creating the arrow using borders */
 
   border: 4px solid transparent;
-  border-left: 4px solid #9a0982;
+  border-left: 4px solid $primary-color;
 }
 /* The same arrow, but with a darker color, to create the shadow effect */
 .static-pages-menu > ul .has-sub > a::before {
@@ -177,8 +177,9 @@
   display:block;
 }
 
-.static-pages-menu a.selected {
-    background-color: #82076E;
+.static-pages-menu a.selected,
+.static-pages-menu li.current a {
+    background-color: $primary-color !important;
     color: white;
 }
 

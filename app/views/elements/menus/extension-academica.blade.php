@@ -15,7 +15,6 @@ $menu = array(
 
 	array('Cursos y Talleres', '/pages/cursos/cursos-y-talleres',
 	 array(
-		array('Programa leer cine', '/pages/programa-leer-cine/programa-leer-cine'),
 		array('Cursos anteriores', '/pages/cursos/cursos-anteriores'),
 		array ('Procedimiento de Inscripción', '/pages/cursos/procedimiento-de-inscripcion')
 		)),
@@ -24,7 +23,10 @@ $menu = array(
 
 	array('Becarios', '/pages/extension-academica/becarios',
 	 array(
-		array('Convocatoria', '/pages/extension-academica/convocatoria-becarios'))),
+		array('Convocatoria', '/pages/extension-academica/convocatoria-becarios')
+		)),
+
+	array('Programa leer cine', '/pages/programa-leer-cine/programa-leer-cine'),
 
 	array('Visitas guiadas', '/pages/extension-academica/visitas-guiadas'));
 ?>

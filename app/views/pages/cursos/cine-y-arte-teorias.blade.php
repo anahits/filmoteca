@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-Cine y arte: Teorías, tendencias, encuentros y desencuentros
+	Cine y arte: Teorías, tendencias, encuentros y desencuentros
 </li>
 @stop
 

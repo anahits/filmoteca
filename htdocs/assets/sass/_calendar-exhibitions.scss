@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+//Search
+
+.input-group{
+    padding-bottom: 20px;
+}
+
+.input-group-addon {
+    background-color: $primary-color;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+.search-autocomplete {
+    width: 200px;
+    height: 35px;
+    }
+
+
+// Contenedor calendario
+
+.flm-section .header-programming {
+    background-color: #2d2d2d;
+    padding: 3px;
+    width: 100%;
+
+    h2 {
+        color: #f9d932;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        color: #fff !important;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+}
+
+.flm-section {
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+.calendar {
+    background-color: #f5f5f5;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    min-height: 20px;
+    padding: 0 !important;
+    background-repeat: repeat-x;
+}
+
+
+.calendar table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: 0 auto;
+
+    caption {
+        padding: 3px;
+        color: $primary-color;
+        font-size: 15px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 600;
+        border-bottom: thin solid #2d2d2d;
+        background-color: #FFFFFF;
+    }
+
+    tr {
+        font-size: 1em;
+        text-transform: capitalize;
+        border-color: #e5e5e5;
+        color: #8a8a8a;
+    }
+
+  
+
+    tr, th, td {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+
+.calendar {
+    .disabled {
+        cursor: not-allowed;
+        color: #fefefe;
+        background-color: #dfdfdf !important;
+        border-radius: 4px;
+    }
+
+    .with-exhibitions {
+            border: thin solid #a5a5a0;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    }
+
+
+
+    .day {
+        background-color: white;
+        display: block;
+    }
+
+    //mantener esto para que se vea el dia que esta seleccionado
+    .day.today {
+        background-color: #e5e5e5;
+        color: $primary-color !important;
+        border: 2px outset #2d2d2d;
+        display: block;
+    }
+
+    // The active day can be the today day and the active day must have most precedence than today day then
+    // this rule must be defined after of .day.today
+    
+    .day.active {
+        &:hover, &:focus, &:active, &.active {
+        background-color: $primary-color;
+        color: #FFFFFF !important; 
+      }
+    }
+
+    .with-exhibitions {
+        &:hover, &:focus {
+        background-color: $primary-color;
+        color: #FFFFFF !important;
+      }
+    }
+
+    .day.none-exhibition {
+        background-color: #efefef;
+        border: solid thin #d2d2d2;
+        @include border-bottom-radius(50%);
+        @include border-top-radius(50%);
+        @include border-left-radius(50%);
+        @include border-right-radius(50%);
+        text-decoration: none;
+        cursor: not-allowed;
+        position: relative;
+
+         a {
+                border: none !important;
+                color: #a5a5a0 !important;
+            }
+    }
+}
+
+
+
+
+//botones salas, historico, funciones especiales y ciclos de cine
+
+.flm-section.programming .link {
+    margin-bottom: 7px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    font-size: 13px;
+}
+
+.link {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.flm-section.programming .link {
+
+    &:hover, &:focus {
+        background-color: $primary-color;
+        a {
+            color: #FFFFFF !important;
+        }
+    }  
+    a:hover, a:focus {
+            color: #FFFFFF !important;
+    }
+}
+
+
+
+//Sección suscribirse para recibir cartelera - Botón enviar afecta también a "histórico de programación"
+
+.subscribe-box.hidden-xs{
+    padding: 5px 0;
+
+    p{
+        margin-bottom: 5px
+    }
+    .input-group {
+    padding-bottom: 5px;
+    }
+
+    .input-group-addon {
+    border-left: 0 none;
+    border-radius: 0 4px 4px 0;
+}
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: $primary-color;
+    border-color: #2d2d2d;
+    color: #ffffff;
+}
+.btn-success:hover:active {
+    background-color: #e3e3e3;
+    border-color: #2d2d2d;
+    color: $primary-color;
+}
+

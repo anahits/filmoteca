@@ -1,5 +1,4 @@
 <div class="modal-header">
-    <h3 class="modal-title">
 		<span class="glyphicon glyphicon-remove pull-right btn-link"
               data-ng-click="$close()"></span>
         <span data-ng-if="action == 'create'">Agregar</span>
@@ -12,20 +11,72 @@
 
         <div class="form-group"
              data-ng-class="{'has-error' : film_form.name.$invalid }">
-            <label for="name" class="col-sm-2 control-label text-right">Nombre</label>
-            <div class="col-sm-10">
-                <input placeholder="Nombre" formname="icon" data-ng-model="icon.name" name="name" type="text" class="form-control">
+             <div class="icon-margin">
+                <label for="name" class="col-sm-2 control-label text-right">Nombre</label>
+                <div class="col-sm-10">
+                    <input placeholder="Nombre" formname="icon" data-ng-model="icon.name" name="name" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group"
+             data-ng-class="{'has-error' : film_form.slug.$invalid }">
+             <div class="icon-margin">
+                <label for="slug" class="col-sm-2 control-label text-right">Slug</label>
+                <div class="col-sm-10">
+                    <input placeholder="Slug" formname="icon" data-ng-model="icon.slug" name="slug" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="icon-margin">
+                <label for="image" class="col-sm-2 control-label text-right">Icono</label>
+                <div class="col-sm-10">
+                    <input file-model="icon.image" name="icon" type="file">
+                </div>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="image" class="col-sm-2 control-label text-right">Icono</label>
-            <div class="col-sm-10">
-                <input file-model="icon.image" name="icon" type="file">
+            <div class="icon-margin">
+                <label for="description" class="col-sm-2 control-label text-right">
+                    Descripción
+                </label>
+                <div class="col-sm-10">
+                    <div data-ui-tinymce="tinymceOptions" formname="icon" data-ng-model="icon.description" name="description" type="text"
+                    ></div>
+                </div>
             </div>
         </div>
 
         <div class="form-group">
+            <label for="description" class="col-sm-2 control-label text-right">
+                Periodo
+            </label>
+            <div class="icon-margin">
+                <div class="col-sm-10">
+                    <label for="description" class="col-sm-2 control-label text-right">
+                    Inicio
+                    </label>
+                    <div class="input-group date">
+                        <input class="form-control" type="text"  value="" placeholder="AAAA-MM-DD hh:mm:ss" formname="icon" ng-model="icon.since" name="since">
+                        <span class="input-group-addon btn"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                    <label for="description" class="col-sm-2 control-label text-right">
+                        Fin
+                    </label>
+                    <div class="input-group date">
+                        <input class="form-control" type="text" value="" placeholder="AAAA-MM-DD hh:mm:ss" formname="icon" ng-model="icon.until" name="until"> 
+                        <span class="input-group-addon btn"><i class="glyphicon glyphicon-th"></i></span>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-2">
+            <label>Nota: Respetar formato de Fecha Ejemplo: 2017-01-24 09:10:00</label>
+            </div>
             <div class="col-sm-4 col-sm-offset-8">
                 <button class="btn btn-success" data-ng-click="save()">
                     Guardar
@@ -35,7 +86,7 @@
         </div>
     </form>
 </div>
-
 <div class="modal-footer">
     <div class="alert alert-danger text-center" data-ng-show="message != ''">{{message}}</div>
 </div>
+

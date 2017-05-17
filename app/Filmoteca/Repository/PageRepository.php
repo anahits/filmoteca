@@ -44,7 +44,7 @@ class PageRepository
 
         $page = $this->page
             ->where('slug', $slug)
-            ->first();
+            ->firstOrFail();
 
         return $page;
     }

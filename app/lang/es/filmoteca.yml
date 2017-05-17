@@ -1,0 +1,7 @@
+general:
+    see_details: Ver detalles
+    results: Resultados
+frontend:
+    filmoteca_medals:
+        see_winner_by_year: Ver galardonado por año
+        title: Galardonados - Medalla Filmoteca UNAM

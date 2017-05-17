@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-Seminario Orson Welles más allá del ciudadano Kane
+	Seminario Orson Welles más allá del ciudadano Kane
 </li>
 @stop
 

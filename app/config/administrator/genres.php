@@ -7,7 +7,7 @@
 return [
     'title' => 'Genres',
     'single' => 'Genre',
-    'model' => '\Filmoteca\Models\Genre',
+    'model' => '\Filmoteca\Models\Exhibitions\Genre',
 
     /**
      * The display columns

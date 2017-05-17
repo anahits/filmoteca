@@ -8,34 +8,6 @@ Route::get('/home', [
 
 Route::get('/', 'HomeController@index');
 
-Route::group(['prefix' => 'exhibition'], function () {
-
-    // app
-    Route::get('', 'ExhibitionController@index');
-    Route::get('history', 'ExhibitionController@history');
-    Route::get('find', [
-        'as' => 'exhibition.find',
-        'uses' => 'ExhibitionController@find'
-    ]);
-
-    Route::get('{id}/show', [
-        'as' => 'exhibition.show',
-        'uses' => 'ExhibitionController@detail'
-    ]);
-    Route::get('{id}/detail-history', [
-        'as' => 'exhibition.detail-history',
-        'uses' => 'ExhibitionController@detailHistory'
-    ]);
-    Route::get('{id}/detail-home', [
-        'as' => 'exhibition.detail-home',
-        'uses' => 'ExhibitionController@detailHome'
-    ]);
-
-    Route::get('/filter/{name?}/{id?}/{title?}', 'ExhibitionController@index');
-});
-
-Route::get('auditorium/{id}', 'AuditoriumController@show');
-
 Route::get('/news/show/{id}', 'NewsController@show');
 
 Route::get('/news/index', 'NewsController@index');
@@ -51,19 +23,19 @@ Route::post('/press_register/store', [
         'uses' => 'PressRegisterController@store'
 ]);
 
-Route::get('/filmoteca-medal/', [
-        'as' => 'filmoteca-medal/',
-        'uses' => 'FilmotecaMedalController@index'
+Route::get('/filmoteca-medal', [
+        'as' => 'filmoteca-medal',
+        'uses' => 'Filmoteca\Frontend\Controllers\FilmotecaMedalController@index'
+]);
+
+Route::get('/filmoteca-medal/{id}', [
+    'as' => 'filmoteca_medal_show',
+    'uses' => 'Filmoteca\Frontend\Controllers\FilmotecaMedalController@show'
 ]);
 
 Route::get('/chronology/', [
         'as' => 'chronology',
         'uses' => 'ChronologyController@index'
-]);
-
-Route::get('/billboard', [
-    'as' => 'billboard',
-    'uses' => 'BillboardController@index'
 ]);
 
 Route::get('/pages/quienes-somos/cronologia', function () {
@@ -86,8 +58,6 @@ Route::get('/courses/app', function () {
 Route::get('/courses/verification', [
     'as' => 'courses.verification',
     'uses' => 'Api\Courses\StudentController@verify']);
-
-Route::get('/auditorim/show/{id}', 'AuditoriumController@show');
 
 /*
 |----------------------------------------------------------------------------

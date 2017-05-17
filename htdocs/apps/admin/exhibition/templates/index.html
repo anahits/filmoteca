@@ -13,6 +13,7 @@
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Título</th>
             <th>Director</th>
             <th>Años</th>
@@ -23,6 +24,7 @@
     </thead>
     <tbody>
         <tr data-ng-repeat="exhibition in exhibitions track by $id(exhibition)">
+            <td>{{ exhibition.exhibition_film.film.id }}</td>
             <td>{{ exhibition.exhibition_film.film.title }}</td>
             <td>{{ exhibition.exhibition_film.film.director }}</td>
             <td>{{ exhibition.exhibition_film.film.years | join: ', ' }}</td>

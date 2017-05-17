@@ -1,11 +1,13 @@
-$primary-color: #810069;
-$secondary-color: #2d2d2d;
+$primary-color: #cc3333;
+$secondary-color: #2D2D2D;
 $tertiary-color: #E5E5E5;
 
 
 $text-color: #646464;
-$active-tab-color: #2D2D2D;
+$active-tab-color: $secondary-color;
 $link-background-color: #CCCCCC;
+
+$disabled-calendar-day: $link-background-color;
 
 $icon-accessibility-color: #003E87;
 

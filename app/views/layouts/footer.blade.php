@@ -15,7 +15,14 @@
 			</div>
 
 			<div class="col-md-4">
-				<ul class="list-unstyled">
+				<div class="pull-left sm-logo-unam">
+					<div class="pull-left">
+						<a href="http://www.unam.mx/" title="Universidad Nacional Autónoma de México, UNAM" target="blank">
+							<img src="/assets/imgs/escudo_firma_UNAM_culturaUNAM.png" alt="Universidad Nacional Autónoma de México, UNAM">
+						</a>
+					</div>
+				</div>
+<!-- 				<ul class="list-unstyled">
 					<li><a href="/" title="Inicio">Inicio</a></li>
 					<li><a href="/pages/quienes-somos/mision-y-vision" title="Quiénes Somos">Quiénes Somos</a></li>
 					<li><a href="/pages/acervo/filmico" title="Acervo">Acervo</a></li>
@@ -26,7 +33,7 @@
 					<li><a href="/pages/concursos/jose-rovirosa" title="Concursos">Concursos</a></li>
 					<li><a href="/pages/libreria/libreria" title="Libreria">Libreria</a></li>
 					<li><a href="/pages/home/creditos" title="Créditos">Créditos</a></li>
-				</ul>
+				</ul> -->
 			</div>
 
 			<div class="col-md-4">

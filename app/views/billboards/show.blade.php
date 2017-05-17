@@ -33,6 +33,10 @@
 			<th>Imagen</th>
 			<td><img src="{{ $resource->image->url('thumbnail') }}">Link</td>
 		</tr>
+		<tr>
+			<th>Background</th>
+			<td><img src="{{ $resource->background->url('standard') }}">Link</td>
+		</tr>
 	</tbody>
 </table>
 

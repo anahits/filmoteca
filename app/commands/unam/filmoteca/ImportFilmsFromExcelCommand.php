@@ -53,9 +53,9 @@ class ImportFilmsFromExcelCommand extends Command {
 	 */
 	public function __construct()
 	{
-		$this->country 		= App::make('Filmoteca\Models\Country');
-		$this->film 		= App::make('Filmoteca\Models\Film');
-		$this->genre 		= App::make('Filmoteca\Models\Genre');
+		$this->country 		= App::make('Filmoteca\Models\Exhibitions\Country');
+		$this->film 		= App::make('Filmoteca\Models\Exhibitions\Film');
+		$this->genre 		= App::make('Filmoteca\Models\Exhibitions\Genre');
 		$this->newGenres 	= Collection::make([]);
 
 		parent::__construct();
@@ -92,7 +92,7 @@ class ImportFilmsFromExcelCommand extends Command {
 			$film->countries()->sync($country_id);
 		});
 
-		
+
 		if(!$this->newGenres->isEmpty())
 		{
 			$this->info(
@@ -142,7 +142,7 @@ class ImportFilmsFromExcelCommand extends Command {
 
 			$this->info(
 				Lang::get(
-					'commands.iffe.more-that-one-genre-found', 
+					'commands.iffe.more-that-one-genre-found',
 					[
 						'name' 		=> $name,
 						'title' 	=> $title
@@ -170,9 +170,9 @@ class ImportFilmsFromExcelCommand extends Command {
 
 			if( $results->isEmpty() )
 			{
-				$this->info( 
+				$this->info(
 					Lang::get(
-						'commands.iffe.no-country-found', 
+						'commands.iffe.no-country-found',
 						[
 							'name' 	=> $name,
 							'id' 	=> $film->id
@@ -182,12 +182,12 @@ class ImportFilmsFromExcelCommand extends Command {
 
 				return [];
 			}
-			
+
 			if( $results->count() > 1)
 			{
 				$this->info(
 					Lang::get(
-						'commands.iffe.more-that-one-country-found', 
+						'commands.iffe.more-that-one-country-found',
 						[
 							'name' 		=> $name,
 							'id' 		=> $film->id,
@@ -198,8 +198,8 @@ class ImportFilmsFromExcelCommand extends Command {
 			}
 
 			$countriesIds[] = $results->first()->id;
-		}	
-		
+		}
+
 		return $countriesIds;
 	}
 
@@ -224,10 +224,10 @@ class ImportFilmsFromExcelCommand extends Command {
 
 		return array(
 			array(
-				'file-name', 
-				null, 
+				'file-name',
+				null,
 				InputOption::VALUE_OPTIONAL,
-				'File name. Default: ' . $defaultFileName, 
+				'File name. Default: ' . $defaultFileName,
 				$defaultFileName),
 		);
 	}

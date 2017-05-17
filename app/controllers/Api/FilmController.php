@@ -76,7 +76,7 @@ class FilmController extends ApiController
     }
 
     /**
-     * @return \Filmoteca\Models\Film
+     * @return \Filmoteca\Models\Exhibitions\Film
      */
     public function store()
     {
@@ -106,7 +106,7 @@ class FilmController extends ApiController
 
     /**
      * @param int $id
-     * @return \Filmoteca\Models\Film
+     * @return \Filmoteca\Models\Exhibitions\Film
      */
     public function destroy($id)
     {
@@ -123,7 +123,7 @@ class FilmController extends ApiController
 
     /**
      * @param $id
-     * @return \Filmoteca\Models\Film
+     * @return \Filmoteca\Models\Exhibitions\Film
      */
     public function update($id)
     {

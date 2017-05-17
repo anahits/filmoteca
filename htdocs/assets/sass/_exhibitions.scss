@@ -1,6 +1,6 @@
-@import 'exhibitions-datepicker';
+@charset "UTF-8";
 
-.exhibition-schedules .label{
+.exhibition-schedules .label {
     margin-right: 5px;
 }
 
@@ -11,3 +11,419 @@
 .exhibition-schedules .label {
     display: inline-block;
 }
+
+.billboard-banner {
+    height: 58px;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.color-underline {       
+    color: $primary-color !important;
+}
+ 
+.row.film {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    //Imagen de película y me gusta
+    
+    .col-xs-4.col-sm-6.col-md-5.col-lg-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 2px;
+        width: 192px !important;
+        
+        img {
+            margin: 45px 17px 10px !important;
+            max-width: 185px;
+        }
+
+        .fb-like.fb_iframe_widget {
+            display: flex;
+            position: relative;
+            padding-left: 35px !important;
+        }
+    }
+
+    //Panel pestañas
+
+    .col-xs-12.col-sm-6.col-md-7.col-lg-9 {
+        max-width: 509px !important;
+        width: 509px !important;
+        padding-left: 43px; 
+        padding-right: 0; 
+
+        .content.size-tab-show {
+            width: 470px;
+        }
+
+        .col-md-4.underline.bold {
+            margin: 10px 0 10px!important;
+        }
+    }
+}
+
+.nav.nav-tabs.film-tabs {
+    max-width: 100%;
+    border-bottom: 0 !important;
+    background-color: #eee !important;
+    height: 53px; 
+    width: 470px; 
+
+    li > a:hover, li > a:focus {
+        color: #555 !important;
+        background-color: #fff !important;
+        margin: 0 !important;
+    }
+
+    li.active > a, .nav-tabs.film-tabs > li.active > a:hover, .border > li.active > a:focus {
+        background: #fff !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .border {
+        border: 1px solid #ddd !important;
+        border-radius: 4px 4px 0 0 !important;
+        max-width: 20% !important;
+        width: 95px;
+    }
+} 
+
+.row.tab-icon {
+    margin: -11px !important;
+    height: 52px;
+    
+    .col-md-5 {    
+        padding: 0;
+        max-width: 33%;
+
+        .link {
+            -webkit-background-size: cover; 
+            -moz-background-size: cover; 
+            -o-background-size: cover; 
+            background-color: transparent !important; 
+        }
+
+        .link img {
+            padding-top: 10px !important;
+            max-width: 20px !important;
+            display: flex;
+            position: relative;
+            padding-right: 4px;
+        }
+    }
+    
+    .col-md-7 { 
+        padding: 0 !important;
+
+        p {
+            margin: 9px 0 14px;
+            max-width: 48px;
+            padding-top: 5px !important;
+        }
+    }
+    
+    .tab-tech-card { 
+        padding: 0 !important;
+        max-width: 35%;
+
+        .link img {
+            margin-right: 15px !important;
+        }
+
+        p {
+            margin: 1px 0 3px !important;
+            max-width: 30px;
+        }
+    }
+
+    .tab-trailer-notes { 
+        padding: 0 !important;
+        max-width: 38%;
+
+        .link img {
+            margin-right: 15px !important;
+        }
+
+        p {
+            margin: 9px 0 16px !important;
+            max-width: 25px;
+            padding-top: 3px !important;
+        }
+    }
+    
+}
+
+.for-show{
+
+    .content.size-tab-show {
+        padding-right: 0 !important; 
+        max-width: 445px !important;
+    }
+
+    .col-md-3.col-lg-3 img {
+        margin: 10px -11px !important;
+        padding-top: 0 !important;
+        max-width: 140% !important;
+    }
+    
+    .fb-like.fb_iframe_widget {
+        padding-left: 10px !important;
+    }
+
+    .hidden-title h2 {
+        display: none;
+        visibility: hidden;
+    } 
+}
+
+.panel.panel-default.no-line { 
+    border-style: hidden !important;
+
+    table {
+        border-spacing: 2px;
+        margin-bottom: 0 !important;
+                
+        .bold {
+            font-weight: bold !important;
+        }
+
+        td {     
+            border-top: 1px solid #ddd !important;
+            vertical-align: middle !important;
+        }
+    }
+}
+
+.row.film-tabs {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    .btn.btn-default.more-schedules {
+        text-align: left !important;
+        font-size: 11px !important;
+        border-color: #ddd !important;
+        max-width: 100% !important;
+        padding: 4px 25px !important;
+        background-position: 0 0 !important;
+    }    
+}
+
+.more-schedules { 
+    border-color: #fff !important;
+
+    .extra-schedules table {
+        color: #646464 !important;
+        font-size: 14px !important;
+        font-family: "Helvetica Neue" !important;
+        border-style: hidden !important;
+
+        .table-responsive {
+            border: 0 none !important;
+        }
+        
+        .bold {
+            font-weight: bold !important;
+
+            a:hover, a:focus {
+            color: #23527c !important;
+            }
+        }
+
+        td{
+            vertical-align: middle !important;
+        }
+    }
+}
+
+.result-number {
+   font-size: 16px !important;   
+}
+
+li.margin {
+    padding: 10px 20px;
+    height: 240px;
+    max-width: 470px;
+}
+
+li.margin.synopsis-margin {
+    padding: 10px 20px;
+}
+
+li.margin.schedules-margin {
+    padding: 10px 20px;
+}
+
+p.margin {
+    margin: 0;
+}
+
+.scroll-over {
+    border-style: ridge;
+    overflow-y: scroll;
+    height: 231px;
+    padding-left: 5px;
+}
+
+
+//Ciclos y funciones especiales
+
+.panel-heading.small-heading {
+    padding: 0 15px !important; 
+}
+
+.content h1 {
+    text-align: left !important;
+}
+
+.small-cycle-heading{
+    .program-ciclo{
+        
+        margin-right: -25px; 
+        right: -5px;
+
+        .link{
+            height: 30px !important; 
+        }
+
+        .link img {
+            max-width: 25px !important;
+            margin-top: -2px;
+        }
+        
+        .underline {
+            text-decoration: none !important;
+        }
+
+        h3 {
+            font-size: 10px !important;
+            margin-top: -5px;
+        }
+    }
+}
+
+.icon{
+
+    .col-xs-2.col-sm-1.ciclo-icon {
+        padding-left: 0;
+
+        .link{
+            -webkit-background-size: cover; 
+            -moz-background-size: cover; 
+            -o-background-size: cover; 
+            height: 50px; 
+            background-color: transparent !important;
+        }
+
+        .link img {
+            min-height: 80%; 
+            max-width: 36px;
+            display: flex;
+            position: relative;
+        }
+    }
+
+    .col-xs-10.col-sm-11 { 
+
+        h3 {
+            padding-top: 15px !important;
+            text-align: left;
+            color: #333333 !important;
+            font-size: 18px;
+        }
+
+        .fixed {
+            display: flex;
+            position: relative;
+        }
+    }
+}
+
+.panel-heading.text-center {    
+    h3 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 20px;
+    }
+}
+
+.panel.panel-default {
+
+    .panel-body{
+        .row.margin{
+            margin-bottom: 200px;
+        }
+    }
+
+    .panel-body.exhibition {
+        padding: 0 !important;
+    }
+}
+
+.period {
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 400px;
+    margin-left: 140px;
+}
+
+.description.cycle-scroll-over {
+    padding: 10px;
+    border: 1px dashed #ddd !important;
+    overflow-y: scroll;
+    height: 100px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+
+// Salas de cine
+
+.panel-heading {
+    h3 {
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center;
+
+        a span {
+            font-size: 19px;
+            color: $text-color;
+            font-weight: 400;
+        }
+    }
+}
+
+.col-sm-4 {
+    .img-responsive {
+        padding-top: 20px;
+    }
+}
+
+
+//histórico de programación
+
+.form-horizontal .col-sm-10 {
+    input {
+        max-width: 100%
+    }
+}
+
+
+//facebook sidebar
+
+.hidde-when-small {
+    display: flex;
+    visibility: visible;
+}
+
+.hidde-when-normal {
+    display: none;
+    visibility: hidden;
+}
+
+

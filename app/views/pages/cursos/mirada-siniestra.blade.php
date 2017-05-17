@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-La mirada siniestra: El cine según Hitchcock (un acercamiento vouyerista)
+	La mirada siniestra: El cine según Hitchcock (un acercamiento vouyerista)
 </li>
 @stop
 

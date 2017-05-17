@@ -19,6 +19,10 @@ $menu = array(
 
 	array('Corto móvil', '/pages/concursos/corto-movil'),
 
+	array('Bienal de Tesis', '/pages/concursos/bienal-tesis'),
+
+	array('Capturando el deporte', '/pages/concursos/capturando-deporte'),
+
 	array('Convocatorias', '/pages/concursos/convocatorias'));
 
 ?>

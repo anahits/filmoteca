@@ -7,7 +7,7 @@
 return [
     'title' => 'Countries',
     'single' => 'Country',
-    'model' => '\Filmoteca\Models\Country',
+    'model' => '\Filmoteca\Models\Exhibitions\Country',
 
     /**
      * The display columns

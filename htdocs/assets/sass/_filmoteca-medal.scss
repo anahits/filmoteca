@@ -92,3 +92,23 @@
 	color: #999 !important;
 	font-weight: normal !important;
 }
+
+.ui-slider-pips .ui-slider-pip-selected, .ui-slider-pips .ui-slider-pip-selected-first, .ui-slider-pips .ui-slider-pip-selected-second {
+    color: $primary-color !important;
+}
+
+.ui-slider-horizontal.ui-slider-pips {
+    margin-top: 25px !important;
+}
+
+.wrapper-items{
+	padding-top: 15px;
+}
+
+.results{
+	padding-bottom: 10px;
+}
+
+.control-label{
+	margin-bottom: 0px;
+}

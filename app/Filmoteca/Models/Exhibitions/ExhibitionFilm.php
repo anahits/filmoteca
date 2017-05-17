@@ -1,15 +1,25 @@
-<?php namespace Filmoteca\Models\Exhibitions;
+<?php
+
+namespace Filmoteca\Models\Exhibitions;
 
 use Eloquent;
 
-use Filmoteca\Models\Film;
-
+/**
+ * Class ExhibitionFilm
+ * @package Filmoteca\Models\Exhibitions
+ */
 class ExhibitionFilm extends Eloquent
 {
-	protected $guarded = [];
+    /**
+     * @var array
+     */
+    protected $guarded = [];
 
-	public function film()
-	{
-		return $this->belongsTo('Filmoteca\Models\Film');
-	}
+    /**
+     * @return mixed
+     */
+    public function film()
+    {
+        return $this->belongsTo('Filmoteca\Models\Exhibitions\Film');
+    }
 }

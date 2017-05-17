@@ -1,8 +1,9 @@
 <?php namespace Filmoteca\Repository;
 
-use Filmoteca\Models\Film;
+use Filmoteca\Models\Exhibitions\Film;
 use Filmoteca\Pagination\Results;
 use Exception;
+use Illuminate\Support\Str;
 use InvalidArgumentException;
 
 class FilmsRepository extends ResourcesRepository implements PageableRepositoryInterface
@@ -30,6 +31,9 @@ class FilmsRepository extends ResourcesRepository implements PageableRepositoryI
             $countries_ids = $data['countries'];
             unset($data['countries']);
         }
+
+        $slugParts = [Str::slug($data['title']), Str::slug($data['director'])];
+        $data['slug'] = implode('_', $slugParts);
 
         $film = $this->resource->create($data);
 
@@ -130,5 +134,27 @@ class FilmsRepository extends ResourcesRepository implements PageableRepositoryI
         $results->setTotal($totalFilms);
 
         return $results;
+    }
+
+    /**
+     * @param string $slug
+     * @return \Filmoteca\Exhibition\Type\Film
+     */
+    public function findBySlug($slug)
+    {
+        $film = Film::where('slug', $slug)->first();
+
+        return $film;
+    }
+
+    /**
+     * @param $slug
+     * @return \Filmoteca\Exhibition\Type\Film
+     */
+    public function findOneBySlug($slug)
+    {
+        $film = Film::where('slug', $slug)->limit(1)->firstOrFail();
+
+        return $film;
     }
 }

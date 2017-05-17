@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "jquery": "1.11.*",
+    "jqueryui": "1.11.4",
     "bootstrap": "3.2.*",
     "jquery-form": "3.*",
     "jquery-validate": "1.12.*",
@@ -29,6 +30,7 @@
     "angucomplete-alt": "0.0.18",
     "requirejs": "2.1.*",
     "requirejs-plugins": "1.0.*",
+    "font-awesome": "4.6.3",
     "text": "2.0.*",
     "bourbon": "3.2.*",
     "jquery-ui-slider-pips": "1.7.2",

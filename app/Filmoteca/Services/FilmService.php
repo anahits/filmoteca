@@ -36,7 +36,7 @@ class FilmService
 
     /**
      * @param $id
-     * @return \Filmoteca\Models\Film
+     * @return Filmoteca\Models\Exhibitions\Film
      */
     public function findFilm($id)
     {
@@ -45,7 +45,7 @@ class FilmService
 
     /**
      * @param array $data
-     * @return \Filmoteca\Models\Film
+     * @return Filmoteca\Models\Exhibitions\Film
      */
     public function storeFilm(array $data)
     {
@@ -54,7 +54,7 @@ class FilmService
 
     /**
      * @param int $id
-     * @return \Filmoteca\Models\Film
+     * @return Filmoteca\Models\Exhibitions\Film
      */
     public function destroyFilm($id)
     {
@@ -66,7 +66,7 @@ class FilmService
     /**
      * @param int $id
      * @param array $data
-     * @return \Filmoteca\Models\Film
+     * @return Filmoteca\Models\Exhibitions\Film
      */
     public function updateFilm($id, array $data)
     {

@@ -9,8 +9,13 @@
     Cursos y talleres
   </a>
 </li>
+<li>
+  <a href="/pages/cursos/cursos-anteriores">
+    Cursos Anteriores
+  </a>
+</li>
 <li class="active">
-  Seminario cine sin ojo. Del cinematógrafo a la imagen 3D
+	Seminario cine sin ojo. Del cinematógrafo a la imagen 3D
 </li>
 @stop
 

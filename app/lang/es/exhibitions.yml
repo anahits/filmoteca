@@ -1,0 +1,91 @@
+frontend:
+    history:
+        title: Histórico de programación
+        search: Buscar
+        results: 'Se encontraron <b>:number</b> películas'
+        none_results: Ninguna película encontrada.
+    calendar:
+        title: Cine UNAM
+        subtitle: Consulta programación
+        exhibitions_in_the_day: ':number exhibiciones en este día'
+    auditorium:
+        index:
+            title: Ubicación Salas de cine
+        show:
+            direction: Dirección
+            telephone: Teléfono
+            schedule: Horario
+            general_cost: Costo general
+            special_cost: Costo especial
+            venue: Sede
+    billboard:
+        index:
+            title: Cartelera digital
+            billboard_of: Cartelera de :month
+            consult: Consultar
+            earlier_billboard: Carteleras anteriores (:year)
+    invitations:
+        index:
+            title: Invitaciones
+            old: 
+                title: Invitaciones Anteriores
+    exhibition:
+        index:
+            title: ':textual_day :numeric_day de :textual_month'
+            breadcrumbs_title: Programación
+            results_number: ':number película(s) programada(s) para esta fecha:'
+            search: Buscar película
+            none_extra_schedule: No hay más horarios para ésta película
+        show:
+            see_more: Ver más »
+            see_location: Ver ubicación
+            see_more_schedules: Ver más fechas »
+            see_auditoriums_location: Ver ubicación de salas
+            see_trailer: Ver trailer
+            receive_our_digital_billboard: Recibe nuestra cartelera digital
+            enter_your_email: Ingresa tu correo electrónico
+            send: Enviar
+            unam_cinemas_community: Comunidad Cines UNAM
+            day: Día
+            schedules: Horarios
+            film_notes: Notas de la película
+            exhibition_notes: Notas de la exhibición
+            date: ':numeric_day-:textual_month-:year'
+    film:
+        index:
+            title: Películas
+            none_film_found: Ninguna película encontrada con el título <b>:film_title<b>
+        show:
+            fields:
+                synopsis: Sinopsis
+                technical_card: Ficha técnica
+                trailer: Trailer
+                notes: Notas
+                auditorium: Sala
+                director: Director
+                title: Título
+                original_title: Título original
+                years: Año
+                countries: Pais
+                duration: Duración
+                genre: Género
+                director: Director
+                script: Guión
+                photographic: Fotografía
+                music: Música
+                edition: Edición
+                production: Producción
+                cast: Reparto
+    cycle:
+        index:
+            title: Ciclos y funciones especiales
+            period: Se presenta del :since_day de :since_month al :until_day de :until_month de :until_year
+            see_exhibitions: Ver programación de este ciclo
+        show:
+            title: Programación de
+    medal:
+        index:
+            entrega: 'Fecha de entrega'
+            fecha: ' :numeric_day de :textual_month de :numeric_year'
+general:
+    download: Descargar

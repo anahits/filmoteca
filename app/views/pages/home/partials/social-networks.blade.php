@@ -10,8 +10,7 @@
 							<span class="icon icon-facebook"></span>
 							<h3 class="h4">Facebook</h3>
 						</div>
-						<div class="fb-wrap">
-							<div class="fb-like-box" data-href="https://www.facebook.com/FilmotecaUNAM?ref=ts&amp;fref=ts" data-width="100%" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+						<div class="fb-page" data-href="https://www.facebook.com/FilmotecaUNAM?ref=ts&amp;amp;fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/FilmotecaUNAM?ref=ts&amp;amp%3Bfref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FilmotecaUNAM?ref=ts&amp;amp%3Bfref=ts">Butaca Unam</a></blockquote>
 						</div>
 					</div>
 				</div>
